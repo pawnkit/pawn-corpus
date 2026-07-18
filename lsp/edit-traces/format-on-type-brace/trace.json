@@ -1,0 +1,27 @@
+{
+  "initialText": "stock Clamp(value, low, high) {\n",
+  "operation": "format-on-type",
+  "request": {
+    "position": { "line": 0, "character": 32 },
+    "triggerCharacter": "{"
+  },
+  "edits": [
+    {
+      "seq": 1,
+      "range": {
+        "start": { "line": 0, "character": 30 },
+        "end": { "line": 0, "character": 32 }
+      },
+      "newText": "\n{",
+      "description": "move opening brace to its own line per recommended profile brace style"
+    }
+  ],
+  "expected": {
+    "resultText": "stock Clamp(value, low, high)\n{\n",
+    "invariants": [
+      "edits do not overlap",
+      "applying edits to initialText yields resultText exactly",
+      "re-running format-on-type against resultText's trailing brace produces no further edits (idempotent)"
+    ]
+  }
+}

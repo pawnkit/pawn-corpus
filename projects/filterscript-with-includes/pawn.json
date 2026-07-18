@@ -1,0 +1,8 @@
+{
+  "entry": "filterscripts/session.pwn",
+  "pawnkit": {
+    "schemaVersion": 1,
+    "profile": "openmp",
+    "includePaths": ["includes"]
+  }
+}

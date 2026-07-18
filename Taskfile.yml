@@ -1,0 +1,35 @@
+version: 3
+
+tasks:
+  build:
+    desc: Build the validator
+    cmds:
+      - go build ./...
+
+  vet:
+    desc: Run go vet
+    cmds:
+      - go vet ./...
+
+  fmt-check:
+    desc: Fail if any Go file is not gofmt-formatted
+    cmds:
+      - test -z "$(gofmt -l .)"
+
+  test:
+    desc: Run Go unit tests for the validator
+    cmds:
+      - go test ./...
+
+  validate:
+    desc: Validate the fixture corpus (schema, licence, duplicates, references)
+    cmds:
+      - go run ./tools/validate ./...
+
+  check:
+    desc: Everything CI runs on pull requests
+    cmds:
+      - task: fmt-check
+      - task: vet
+      - task: test
+      - task: validate

@@ -1,0 +1,37 @@
+{
+  "initialText": "forward OnPlayerConnect(playerid);\n\npublic OnPlayerConnect(playerid)\n{\n    return 1;\n}\n",
+  "operation": "rename",
+  "request": {
+    "position": { "line": 2, "character": 7 },
+    "newName": "OnPlayerJoin"
+  },
+  "edits": [
+    {
+      "seq": 1,
+      "range": {
+        "start": { "line": 0, "character": 8 },
+        "end": { "line": 0, "character": 23 }
+      },
+      "newText": "OnPlayerJoin",
+      "description": "rename forward declaration"
+    },
+    {
+      "seq": 2,
+      "range": {
+        "start": { "line": 2, "character": 7 },
+        "end": { "line": 2, "character": 22 }
+      },
+      "newText": "OnPlayerJoin",
+      "description": "rename definition"
+    }
+  ],
+  "expected": {
+    "resultText": "forward OnPlayerJoin(playerid);\n\npublic OnPlayerJoin(playerid)\n{\n    return 1;\n}\n",
+    "invariants": [
+      "edits do not overlap",
+      "edits apply cleanly in listed order without re-resolving ranges",
+      "applying edits to initialText yields resultText exactly",
+      "renaming resultText back to the original name and reapplying yields initialText exactly"
+    ]
+  }
+}

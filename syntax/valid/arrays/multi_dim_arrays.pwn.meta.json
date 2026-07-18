@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "syntax.valid.arrays.multi_dim_arrays",
+  "category": "syntax-valid",
+  "description": "Two- and three-dimensional array declarations, an ellipsis-filled initializer, a const initialized 2D array, and nested indexing.",
+  "profiles": ["samp-037", "openmp", "recommended"],
+  "tags": ["array", "declaration"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}

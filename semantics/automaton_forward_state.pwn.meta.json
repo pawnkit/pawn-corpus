@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.automaton_forward_state",
+  "category": "semantics",
+  "description": "A forward declaration includes a state selector that the compiler ignores.",
+  "profiles": ["recommended"],
+  "tags": ["semantic", "automaton", "state", "forward"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/forward-state-ignored",
+    "diagnostics": [{ "severity": "warning", "message": "state selector on forward declaration is ignored", "line": 1 }],
+    "notes": "Verified against pawncc 3.10.10 warning 231."
+  }
+}

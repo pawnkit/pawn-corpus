@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.automaton_initialized_state_variable",
+  "category": "semantics",
+  "description": "A second state-specific declaration initializes the same state variable.",
+  "profiles": ["recommended"],
+  "tags": ["semantic", "automaton", "state", "variable"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/initialized-state-variable",
+    "diagnostics": [{ "severity": "error", "message": "state variable 'value' may not be initialized", "line": 5 }],
+    "notes": "Verified against pawncc 3.10.10 error 089. A lone initialized state declaration does not trigger this compiler error."
+  }
+}

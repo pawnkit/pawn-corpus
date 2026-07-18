@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.automaton_missing_implementation",
+  "category": "semantics",
+  "description": "A used stateful function has no implementation or fallback for one known state.",
+  "profiles": ["recommended"],
+  "tags": ["semantic", "automaton", "state"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/missing-state-implementation",
+    "diagnostics": [
+      {
+        "severity": "warning",
+        "message": "no implementation for state 'waiting' in function 'Handler' and no fallback",
+        "line": 6
+      }
+    ],
+    "notes": "Verified against pawncc 3.10.10 warning 230. Pawncc reports this generated dispatch warning at line 0."
+  }
+}

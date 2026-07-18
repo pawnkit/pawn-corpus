@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.automaton_function_conflict",
+  "category": "semantics",
+  "description": "Implementations of one function belong to different automatons.",
+  "profiles": ["recommended"],
+  "tags": ["semantic", "automaton", "state"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/automaton-conflict",
+    "diagnostics": [
+      {
+        "severity": "error",
+        "message": "'Handler' may only belong to one automaton",
+        "line": 9
+      }
+    ],
+    "notes": "Verified against pawncc 3.10.10 error 083."
+  }
+}

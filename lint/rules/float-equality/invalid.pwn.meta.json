@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1",
+  "id": "lint.rules.float-equality.invalid",
+  "category": "lint",
+  "description": "Two Float:-tagged locals compared with == and then != ; both should be flagged by the float-equality rule.",
+  "profiles": ["recommended", "strict"],
+  "tags": ["lint", "float-equality", "float"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnostics": [
+      {
+        "code": "float-equality",
+        "severity": "warning",
+        "message": "Float values compared with '=='; rounding error makes this unreliable",
+        "line": 5
+      },
+      {
+        "code": "float-equality",
+        "severity": "warning",
+        "message": "Float values compared with '!='; rounding error makes this unreliable",
+        "line": 9
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.automaton_variable_empty_states",
+  "category": "semantics",
+  "description": "A state variable declares an empty state selector.",
+  "profiles": ["recommended"],
+  "tags": ["semantic", "automaton", "state", "variable"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/no-defined-states",
+    "diagnostics": [{ "severity": "error", "message": "no states are defined for 'value'", "line": 2 }],
+    "notes": "Verified against pawncc 3.10.10 error 085."
+  }
+}

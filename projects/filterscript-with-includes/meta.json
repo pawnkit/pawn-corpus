@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1",
+  "id": "projects.filterscript-with-includes",
+  "category": "project",
+  "description": "Filterscript project with a local include resolved via includePaths, exercising include resolution during project discovery.",
+  "profiles": ["openmp", "recommended"],
+  "tags": ["project", "filterscript", "discovery", "include-resolution"],
+  "kind": "synthetic",
+  "origin": {
+    "kind": "synthetic",
+    "notes": "Uses the PawnKit project extension defined by RFC 0002."
+  },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "notes": "The entry and both includes resolve from the declared include path."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "syntax.valid.states.state_machine_basic",
+  "category": "syntax-valid",
+  "description": "State-qualified forward declaration and two state-scoped overloads of the same callback using the <state, state> header syntax.",
+  "profiles": ["samp-037", "openmp", "legacy"],
+  "tags": ["state", "function"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}

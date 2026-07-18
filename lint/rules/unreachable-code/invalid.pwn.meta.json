@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1",
+  "id": "lint.rules.unreachable-code.invalid",
+  "category": "lint",
+  "description": "Both if/else branches return, making the trailing return statement dead code that the unreachable-code rule should flag.",
+  "profiles": ["recommended", "strict"],
+  "tags": ["lint", "unreachable-code", "control-flow"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnostics": [
+      {
+        "code": "unreachable-code",
+        "severity": "warning",
+        "message": "unreachable code",
+        "line": 11
+      }
+    ]
+  }
+}

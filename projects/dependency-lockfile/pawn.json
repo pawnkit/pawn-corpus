@@ -1,0 +1,12 @@
+{
+  "entry": "main.pwn",
+  "dependencies": ["local/example-includes#0000000"],
+  "experimental": {
+    "build_file": false
+  },
+  "pawnkit": {
+    "schemaVersion": 1,
+    "profile": "openmp",
+    "lockfile": "pawn.lock"
+  }
+}

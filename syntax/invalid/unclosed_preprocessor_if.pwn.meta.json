@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1",
+  "id": "syntax.invalid.unclosed_preprocessor_if",
+  "category": "syntax-invalid",
+  "description": "A #if/#else conditional compilation block is never closed with #endif before end of file.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["preprocessor", "conditional"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "preprocessor/unterminated-conditional",
+    "diagnostics": [
+      {
+        "severity": "error",
+        "message": "#endif expected but end of file reached",
+        "line": 17
+      }
+    ]
+  }
+}

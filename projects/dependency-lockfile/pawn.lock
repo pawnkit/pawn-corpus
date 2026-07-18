@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "runtimeProfile": "openmp",
+  "packages": [
+    {
+      "name": "local/example-includes",
+      "version": "1.0.0",
+      "resolved": "local/example-includes@1.0.0",
+      "commit": "0000000",
+      "source": {
+        "type": "local",
+        "url": "file:vendor/example-includes"
+      },
+      "kind": "includes"
+    }
+  ]
+}

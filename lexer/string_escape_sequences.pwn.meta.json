@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "lexer.string_escape_sequences",
+  "category": "lexer",
+  "description": "String and character literal escape sequences: newline, tab, escaped quote/backslash, hex escape, and an unpacked/'raw' string prefix that disables escapes.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["lexer", "string", "escape"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}

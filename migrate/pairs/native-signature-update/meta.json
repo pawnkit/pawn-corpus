@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1",
+  "id": "migrate.pairs.native-signature-update",
+  "category": "migrate",
+  "description": "Removes a manual 144-byte message truncation workaround, on the premise that the open.mp runtime's SendClientMessage no longer imposes the classic SA-MP length limit.",
+  "profiles": ["openmp"],
+  "tags": ["migrate", "samp-to-openmp", "string-limit"],
+  "kind": "synthetic",
+  "origin": {
+    "kind": "synthetic",
+    "notes": "Illustrative migration based on general SA-MP/open.mp migration guidance about relaxed message-length limits. Not verified against a primary open.mp changelog in this environment (no network access); confirm against pawn-api/open.mp docs before treating as an authoritative fact rather than an illustrative codemod shape."
+  },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "pending",
+    "goldenRef": "after.pwn",
+    "notes": "This migration is not implemented yet. The pair records the intended source edit."
+  }
+}

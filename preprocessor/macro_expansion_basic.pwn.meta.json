@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "id": "preprocessor.macro_expansion_basic",
+  "category": "preprocessor",
+  "description": "Object-like macro, single-argument, three-argument, and argument-repeating function-like macros expanded in expression and statement position.",
+  "profiles": ["samp-037", "openmp", "recommended"],
+  "tags": ["preprocessor", "macro"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "notes": "Expansion of CLAMP/TWICE double-evaluates their arguments, which is expected macro behaviour, not a fixture bug."
+  }
+}

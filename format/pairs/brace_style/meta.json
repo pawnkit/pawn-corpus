@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1",
+  "id": "format.pairs.brace_style",
+  "category": "format",
+  "description": "K&R-style (brace on same line as header) function and if/else-if/else chain reformatted to Allman-style (brace on its own line).",
+  "profiles": ["recommended"],
+  "tags": ["format", "brace-style", "if-else"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "goldenRef": "expected.pwn",
+    "notes": "Idempotence expected: formatting expected.pwn again must reproduce it unchanged."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1",
+  "id": "lsp.edit-traces.format-on-type-brace",
+  "category": "lsp-edit-trace",
+  "description": "Typing '{' after a function header triggers on-type formatting that moves the brace to its own line under the recommended profile.",
+  "profiles": ["recommended"],
+  "tags": ["lsp", "format-on-type"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "pending",
+    "goldenRef": "trace.json",
+    "notes": "The language server supports whole-document formatting but not on-type formatting yet. Brace style matches format/pairs/brace_style."
+  }
+}

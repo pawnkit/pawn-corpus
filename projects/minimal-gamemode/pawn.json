@@ -1,0 +1,7 @@
+{
+  "name": "minimal-gamemode",
+  "type": "gamemode",
+  "profile": "openmp",
+  "entry": "gamemodes/main.pwn",
+  "includePaths": ["includes"]
+}

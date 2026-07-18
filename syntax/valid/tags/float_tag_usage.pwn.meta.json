@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "syntax.valid.tags.float_tag_usage",
+  "category": "syntax-valid",
+  "description": "Float: tag usage on parameters, return values, locals, and an explicit tag cast expression.",
+  "profiles": ["samp-037", "openmp", "recommended"],
+  "tags": ["tag", "float"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1",
+  "id": "migrate.pairs.callback-rename",
+  "category": "migrate",
+  "description": "Boolean-intent callbacks are retagged from plain integer 1/0 returns to bool: true/false, matching open.mp/modern-compiler recommended style.",
+  "profiles": ["openmp", "recommended"],
+  "tags": ["migrate", "samp-to-openmp", "bool"],
+  "kind": "synthetic",
+  "origin": {
+    "kind": "synthetic",
+    "notes": "Illustrative migration pattern (int 1/0 -> bool: true/false for boolean-intent callbacks), chosen because bool: tag support is a real, documented modern Pawn compiler feature. Treat the exact callback list as illustrative, not an authoritative migration checklist, until pawn-api/pawnmigrate confirm it."
+  },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "pending",
+    "goldenRef": "after.pwn",
+    "notes": "This migration is not implemented yet. The pair records the intended source edit."
+  }
+}

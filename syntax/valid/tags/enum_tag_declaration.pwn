@@ -1,0 +1,15 @@
+enum E_PLAYER_DATA
+{
+    E_PLAYER_HEALTH,
+    Float:E_PLAYER_SCALE,
+    E_PLAYER_NAME[MAX_PLAYER_NAME]
+};
+
+new PlayerData[MAX_PLAYERS][E_PLAYER_DATA];
+
+enum
+{
+    STATUS_NONE,
+    STATUS_ACTIVE,
+    STATUS_DONE
+};

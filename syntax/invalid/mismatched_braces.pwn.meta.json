@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1",
+  "id": "syntax.invalid.mismatched_braces",
+  "category": "syntax-invalid",
+  "description": "A while block opens a brace that is never closed before the enclosing function closes, leaving braces unbalanced.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["parser", "brace"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "parser/unbalanced-braces",
+    "diagnostics": [
+      {
+        "severity": "error",
+        "message": "expected '}' before end of file",
+        "line": 8
+      }
+    ]
+  }
+}

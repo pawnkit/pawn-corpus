@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1",
+  "id": "syntax.invalid.unexpected_binary_operator",
+  "category": "syntax-invalid",
+  "description": "Two binary operators appear back-to-back with no intervening operand.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["parser", "expression"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "parser/unexpected-token",
+    "diagnostics": [
+      {
+        "severity": "error",
+        "message": "unexpected token '*' in expression",
+        "line": 3
+      }
+    ]
+  }
+}

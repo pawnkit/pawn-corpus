@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "syntax.valid.preprocessor.include_and_define",
+  "category": "syntax-valid",
+  "description": "System include, optional include, an object-like macro, a function-like macro, and a const declaration used together.",
+  "profiles": ["samp-037", "openmp", "recommended"],
+  "tags": ["preprocessor", "include", "macro"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}

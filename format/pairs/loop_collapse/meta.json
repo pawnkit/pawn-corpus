@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1",
+  "id": "format.pairs.loop_collapse",
+  "category": "format",
+  "description": "A densely packed single-line for/if body expands to brace-on-own-line form with normalized spacing and 4-space indentation.",
+  "profiles": ["recommended"],
+  "tags": ["format", "loop", "brace-style"],
+  "kind": "synthetic",
+  "origin": {
+    "kind": "synthetic",
+    "notes": "Style pattern (brace-on-own-line, 4-space indent, spaced operators) cross-checked against pawn-parser test suite / pawnfmt test suite, MIT licensed, PawnKit (testdata/expected/loop_statements.pwn), but this fixture's content is authored fresh for pawn-corpus."
+  },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "goldenRef": "expected.pwn",
+    "notes": "Idempotence expected: formatting expected.pwn again must reproduce it unchanged."
+  }
+}

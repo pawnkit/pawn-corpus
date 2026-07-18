@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.undefined_symbol",
+  "category": "semantics",
+  "description": "Function body references an identifier that is never declared anywhere in the file.",
+  "profiles": ["samp-037", "openmp", "recommended"],
+  "tags": ["semantic", "symbol"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/undefined-symbol",
+    "diagnostics": [
+      {
+        "severity": "error",
+        "message": "undefined symbol 'totallyUndefinedVariable'",
+        "line": 3
+      }
+    ],
+    "notes": "Verified by pawn-analysis. Syntax parsing succeeds."
+  }
+}

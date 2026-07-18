@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "id": "lint.rules.unreachable-code.valid",
+  "category": "lint",
+  "description": "Only one branch returns; the fall-through final return is reachable, so the unreachable-code rule should not fire.",
+  "profiles": ["recommended", "strict"],
+  "tags": ["lint", "unreachable-code", "control-flow"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "diagnostics": []
+  }
+}

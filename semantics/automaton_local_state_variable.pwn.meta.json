@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.automaton_local_state_variable",
+  "category": "semantics",
+  "description": "A local variable incorrectly declares a state selector.",
+  "profiles": ["recommended"],
+  "tags": ["semantic", "automaton", "state", "variable"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/invalid-state-variable",
+    "diagnostics": [{ "severity": "error", "message": "public and local variables may not have states", "line": 3 }],
+    "notes": "Verified against pawncc 3.10.10 error 088."
+  }
+}

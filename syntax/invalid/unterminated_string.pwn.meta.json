@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1",
+  "id": "syntax.invalid.unterminated_string",
+  "category": "syntax-invalid",
+  "description": "String literal is missing its closing double quote before the end of the line.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["lexer", "string"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "lexer/unterminated-string",
+    "diagnostics": [
+      {
+        "severity": "error",
+        "message": "unterminated string literal",
+        "line": 3
+      }
+    ]
+  }
+}

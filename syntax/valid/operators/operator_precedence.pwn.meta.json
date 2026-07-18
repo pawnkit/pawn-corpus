@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "syntax.valid.operators.operator_precedence",
+  "category": "syntax-valid",
+  "description": "Arithmetic, bitwise, relational, logical, ternary, and chained compound-assignment operators in one function.",
+  "profiles": ["samp-037", "openmp", "recommended"],
+  "tags": ["operator", "expression"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}

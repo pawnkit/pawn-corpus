@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "syntax.valid.functions.native_declaration",
+  "category": "syntax-valid",
+  "description": "Native function declarations including a by-reference float output parameter and a tagged native with an implementation alias.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["function", "native", "tag"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.duplicate_declaration",
+  "category": "semantics",
+  "description": "The same local variable name is declared twice in the same block scope.",
+  "profiles": ["samp-037", "openmp", "recommended"],
+  "tags": ["semantic", "symbol", "scope"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/duplicate-declaration",
+    "diagnostics": [
+      {
+        "severity": "error",
+        "message": "symbol 'total' already declared in this scope",
+        "line": 4
+      }
+    ],
+    "notes": "Verified by pawn-analysis. Syntax parsing succeeds."
+  }
+}

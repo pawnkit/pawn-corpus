@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.unreachable_code",
+  "category": "semantics",
+  "description": "Both branches of an if/else return unconditionally, making the trailing return statement unreachable.",
+  "profiles": ["samp-037", "openmp", "recommended"],
+  "tags": ["semantic", "control-flow"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/unreachable-code",
+    "diagnostics": [
+      {
+        "severity": "warning",
+        "message": "unreachable statement",
+        "line": 12
+      }
+    ],
+    "notes": "Verified by pawn-analysis. Syntax parsing succeeds."
+  }
+}

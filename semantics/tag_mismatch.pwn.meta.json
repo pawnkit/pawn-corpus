@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.tag_mismatch",
+  "category": "semantics",
+  "description": "A Float:-tagged function returns a bool:-tagged comparison result.",
+  "profiles": ["samp-037", "openmp", "recommended"],
+  "tags": ["semantic", "tag"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/tag-mismatch",
+    "diagnostics": [
+      {
+        "severity": "warning",
+        "message": "return value expects tag Float, got bool",
+        "line": 5
+      }
+    ],
+    "notes": "Verified by pawn-analysis. Pawncc 3.10.10 also reports the comparison result as bool-tagged."
+  }
+}

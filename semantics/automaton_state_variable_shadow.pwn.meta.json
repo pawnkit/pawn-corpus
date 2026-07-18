@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.automaton_state_variable_shadow",
+  "category": "semantics",
+  "description": "A state variable shadows an ordinary global variable with the same name.",
+  "profiles": ["recommended"],
+  "tags": ["semantic", "automaton", "state", "variable"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/state-variable-shadow",
+    "diagnostics": [{ "severity": "warning", "message": "state variable 'value' shadows a global variable", "line": 4 }],
+    "notes": "Verified against pawncc 3.10.10 warning 233."
+  }
+}

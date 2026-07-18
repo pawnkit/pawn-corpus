@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1",
+  "id": "lsp.edit-traces.rename-symbol-basic",
+  "category": "lsp-edit-trace",
+  "description": "Renaming a public callback updates both its forward declaration and its definition in one atomic edit set.",
+  "profiles": ["recommended"],
+  "tags": ["lsp", "rename"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "pending",
+    "goldenRef": "trace.json",
+    "notes": "The language server does not support rename yet. This trace records the intended atomic edit."
+  }
+}

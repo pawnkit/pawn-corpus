@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.automaton_native_state",
+  "category": "semantics",
+  "description": "A native function incorrectly declares a state selector.",
+  "profiles": ["recommended"],
+  "tags": ["semantic", "automaton", "state"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/invalid-state-function",
+    "diagnostics": [{ "severity": "error", "message": "native and operator functions may not have states", "line": 1 }],
+    "notes": "Verified against pawncc 3.10.10 error 082."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "id": "lint.rules.float-equality.valid",
+  "category": "lint",
+  "description": "Floats compared via an epsilon-tolerant helper instead of direct == / != ; the float-equality rule should not fire.",
+  "profiles": ["recommended", "strict"],
+  "tags": ["lint", "float-equality", "float"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "diagnostics": []
+  }
+}

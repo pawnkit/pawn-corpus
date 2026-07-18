@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "lexer.comment_variants",
+  "category": "lexer",
+  "description": "Line comments, trailing comments, block comments (including inline and multi-line), and a line comment whose text looks like it opens a block comment.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["lexer", "comment", "trivia"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}

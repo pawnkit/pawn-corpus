@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.automaton_state_conflict",
+  "category": "semantics",
+  "description": "Two implementations of one function claim the same state.",
+  "profiles": ["recommended"],
+  "tags": ["semantic", "automaton", "state"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/state-conflict",
+    "diagnostics": [
+      {
+        "severity": "error",
+        "message": "state 'ready' is already assigned to another implementation of 'Handler'",
+        "line": 9
+      }
+    ],
+    "notes": "Verified against pawncc 3.10.10 error 084."
+  }
+}

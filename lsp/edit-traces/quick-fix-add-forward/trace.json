@@ -1,0 +1,31 @@
+{
+  "initialText": "public OnPlayerConnect(playerid)\n{\n    return 1;\n}\n",
+  "operation": "code-action",
+  "request": {
+    "range": {
+      "start": { "line": 0, "character": 7 },
+      "end": { "line": 0, "character": 22 }
+    },
+    "kind": "quickfix",
+    "titleContains": "Add missing forward declaration"
+  },
+  "edits": [
+    {
+      "seq": 1,
+      "range": {
+        "start": { "line": 0, "character": 0 },
+        "end": { "line": 0, "character": 0 }
+      },
+      "newText": "forward OnPlayerConnect(playerid);\n\n",
+      "description": "insert forward declaration above the definition"
+    }
+  ],
+  "expected": {
+    "resultText": "forward OnPlayerConnect(playerid);\n\npublic OnPlayerConnect(playerid)\n{\n    return 1;\n}\n",
+    "invariants": [
+      "edits do not overlap",
+      "applying edits to initialText yields resultText exactly",
+      "re-requesting the same quickfix against resultText yields no code action (already fixed)"
+    ]
+  }
+}

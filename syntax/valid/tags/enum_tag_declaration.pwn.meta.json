@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "syntax.valid.tags.enum_tag_declaration",
+  "category": "syntax-valid",
+  "description": "Named enum used as a struct-like tag with a mixed-type field, plus an anonymous enum of plain constants.",
+  "profiles": ["samp-037", "openmp", "recommended"],
+  "tags": ["tag", "enum"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}

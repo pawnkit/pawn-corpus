@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1",
+  "id": "lsp.edit-traces.quick-fix-add-forward",
+  "category": "lsp-edit-trace",
+  "description": "A public callback with no forward declaration offers a quick fix that inserts one immediately above the definition.",
+  "profiles": ["recommended"],
+  "tags": ["lsp", "code-action", "quickfix"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "pending",
+    "goldenRef": "trace.json",
+    "notes": "The language server supports code actions, but the missing-forward rule is not implemented yet. This trace records the intended edit shape."
+  }
+}

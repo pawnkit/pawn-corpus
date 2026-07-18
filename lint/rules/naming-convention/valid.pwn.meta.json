@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "id": "lint.rules.naming-convention.valid",
+  "category": "lint",
+  "description": "Local variables use camelCase consistently; the naming-convention rule should not fire.",
+  "profiles": ["recommended", "strict"],
+  "tags": ["lint", "naming-convention"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "diagnostics": []
+  }
+}

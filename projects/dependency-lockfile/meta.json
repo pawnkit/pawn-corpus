@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1",
+  "id": "projects.dependency-lockfile",
+  "category": "project",
+  "description": "Project with one locally resolved dependency and a PawnKit lockfile.",
+  "profiles": ["openmp", "recommended"],
+  "tags": ["project", "dependency", "lockfile", "audit"],
+  "kind": "synthetic",
+  "origin": {
+    "kind": "synthetic",
+    "notes": "Exercises offline integrity checks without network metadata."
+  },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "notes": "Project checks and the offline dependency audit pass."
+  }
+}

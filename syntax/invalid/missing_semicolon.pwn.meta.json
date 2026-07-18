@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1",
+  "id": "syntax.invalid.missing_semicolon",
+  "category": "syntax-invalid",
+  "description": "A local variable initializer statement is missing its terminating semicolon.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["parser", "statement"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "parser/expected-semicolon",
+    "diagnostics": [
+      {
+        "severity": "error",
+        "message": "expected ';'",
+        "line": 3
+      }
+    ]
+  }
+}

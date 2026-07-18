@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "lexer.line_continuations",
+  "category": "lexer",
+  "description": "Backslash line continuations inside a macro definition and inside an ordinary expression statement, plus a naturally multi-line parameter list (no backslash needed inside parentheses).",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["lexer", "continuation", "preprocessor"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}

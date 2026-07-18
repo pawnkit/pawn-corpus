@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.automaton_fallback_only",
+  "category": "semantics",
+  "description": "A stateful function declares a fallback without any named state.",
+  "profiles": ["recommended"],
+  "tags": ["semantic", "automaton", "state"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/no-defined-states",
+    "diagnostics": [{ "severity": "error", "message": "no states are defined for 'Handler'", "line": 2 }],
+    "notes": "Verified against pawncc 3.10.10 error 085."
+  }
+}

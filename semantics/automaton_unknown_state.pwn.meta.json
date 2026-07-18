@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.automaton_unknown_state",
+  "category": "semantics",
+  "description": "A state statement names a state that the main automaton does not define.",
+  "profiles": ["recommended"],
+  "tags": ["semantic", "automaton", "state"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/unknown-state",
+    "diagnostics": [
+      {
+        "severity": "error",
+        "message": "unknown state 'missing' for automaton '<main>'",
+        "line": 3
+      }
+    ],
+    "notes": "Verified against pawncc 3.10.10 error 087."
+  }
+}

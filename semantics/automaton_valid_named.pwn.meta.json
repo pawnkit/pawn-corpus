@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.automaton_valid_named",
+  "category": "semantics",
+  "description": "A state statement selects a state declared for a named automaton.",
+  "profiles": ["recommended"],
+  "tags": ["semantic", "automaton", "state"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "notes": "Verified with pawncc 3.10.10. The compiler reports only unused-function warning 203."
+  }
+}

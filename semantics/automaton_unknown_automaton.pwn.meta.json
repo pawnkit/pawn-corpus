@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.automaton_unknown_automaton",
+  "category": "semantics",
+  "description": "A state statement names an automaton that has no state implementation.",
+  "profiles": ["recommended"],
+  "tags": ["semantic", "automaton", "state"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/unknown-automaton",
+    "diagnostics": [
+      {
+        "severity": "error",
+        "message": "unknown automaton 'missing'",
+        "line": 3
+      }
+    ],
+    "notes": "Verified against pawncc 3.10.10 error 086."
+  }
+}

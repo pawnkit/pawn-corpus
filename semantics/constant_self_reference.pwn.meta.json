@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.constant_self_reference",
+  "category": "semantics",
+  "description": "A constant initializer refers to the constant being declared.",
+  "profiles": ["recommended"],
+  "tags": ["semantic", "constant", "declaration-order"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/constant-before-declaration",
+    "diagnostics": [{ "severity": "error", "message": "constant 'VALUE' is used before its declaration", "line": 1 }],
+    "notes": "Verified against pawncc 3.10.10 errors 017 and 008."
+  }
+}

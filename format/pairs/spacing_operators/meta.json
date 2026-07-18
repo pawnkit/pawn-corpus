@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1",
+  "id": "format.pairs.spacing_operators",
+  "category": "format",
+  "description": "Cramped parameter lists and binary operators gain single-space padding without changing operator precedence or parenthesization.",
+  "profiles": ["recommended"],
+  "tags": ["format", "spacing", "operator"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "goldenRef": "expected.pwn",
+    "notes": "Idempotence expected: formatting expected.pwn again must reproduce it unchanged."
+  }
+}

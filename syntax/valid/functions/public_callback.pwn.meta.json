@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "syntax.valid.functions.public_callback",
+  "category": "syntax-valid",
+  "description": "Forward declaration plus matching public callback definitions, including a zero-argument callback.",
+  "profiles": ["samp-037", "openmp", "recommended"],
+  "tags": ["function", "public", "forward", "callback"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}

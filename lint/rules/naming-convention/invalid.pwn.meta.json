@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1",
+  "id": "lint.rules.naming-convention.invalid",
+  "category": "lint",
+  "description": "One local uses PascalCase-with-underscore and another uses SCREAMING_SNAKE_CASE where camelCase is expected; both should be flagged.",
+  "profiles": ["recommended", "strict"],
+  "tags": ["lint", "naming-convention"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnostics": [
+      {
+        "code": "naming-convention",
+        "severity": "warning",
+        "message": "local variable 'Player_Name' should use camelCase",
+        "line": 3
+      },
+      {
+        "code": "naming-convention",
+        "severity": "warning",
+        "message": "local variable 'TOTALSCORE' should use camelCase",
+        "line": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "syntax.valid.functions.basic_stock",
+  "category": "syntax-valid",
+  "description": "Basic stock function declarations with return statements, including a static stock function.",
+  "profiles": ["samp-037", "openmp", "recommended"],
+  "tags": ["function", "stock"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}

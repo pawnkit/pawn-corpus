@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1",
+  "id": "lexer.numeric_literals",
+  "category": "lexer",
+  "description": "Decimal, negative, hexadecimal, binary, digit-separated, and floating point (including exponent form) numeric literals, plus a character literal.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["lexer", "numeric"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" },
+  "divergences": [
+    {
+      "scope": "samp-037",
+      "description": "Digit-group separators in numeric literals (1_000_000, 0b1010_1100) are an openmp-compiler extension; a strict samp-037 profile parser may reject the underscore."
+    }
+  ]
+}
