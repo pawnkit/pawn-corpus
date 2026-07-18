@@ -71,9 +71,10 @@ func validateOne(root string, fx Fixture, schema *Schema, result *Result) {
 
 	if license, ok := fx.Data["license"].(map[string]any); ok {
 		spdx, _ := license["spdx"].(string)
-		if spdx == "" {
+		switch spdx {
+		case "":
 			result.fail("%s: license.spdx is required and must be non-empty", fx.MetaPath)
-		} else if spdx == "NOASSERTION" {
+		case "NOASSERTION":
 			result.fail("%s: license.spdx is \"NOASSERTION\", which is only a placeholder and must be resolved before merge", fx.MetaPath)
 		}
 		if _, ok := license["redistribution"].(string); !ok {
