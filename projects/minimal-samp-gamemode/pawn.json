@@ -1,0 +1,8 @@
+{
+  "entry": "gamemodes/main.pwn",
+  "pawnkit": {
+    "schemaVersion": 1,
+    "profile": "samp-037",
+    "includePaths": ["includes"]
+  }
+}

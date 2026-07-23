@@ -1,0 +1,4 @@
+project	repository	revision	license	role
+scavenge-survive	https://github.com/Southclaws/ScavengeSurvive	399ba8e8fd164243b32fb694f4bb6ce37fe40c35	MPL-2.0	ysi-heavy-sampctl
+gta-open	https://github.com/PatrickGTR/gta-open	c7630a5751827c23cf06308fd7b2d0095801e76e	Apache-2.0	large-modular
+sp-rp	https://github.com/DignitySAMP/SP-RP	3abda1657c0088f837c3e55ee818ebacfe51eb79	BSD-3-Clause	large-legacy-windows-paths

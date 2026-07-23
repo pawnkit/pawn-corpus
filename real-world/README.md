@@ -2,6 +2,16 @@
 
 No upstream source is checked in here yet. Real-world fixtures need per-file licence and provenance review before redistribution.
 
+`PROJECTS.tsv` pins the external projects used by extended integration tests.
+The list is not permission to redistribute their source. CI fetches an exact
+revision and follows each project's licence.
+
+The first five-project integration set is:
+
+- `projects/minimal-samp-gamemode`
+- `projects/filterscript-with-includes`
+- the three repositories in `PROJECTS.tsv`
+
 ## Acceptance rules
 
 A fixture must have:

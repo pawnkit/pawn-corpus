@@ -8,6 +8,14 @@ metadata schema (`schemaVersion`) as described in
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-07-23
+
+### Added
+
+- A small SA-MP project fixture and pinned external integration projects.
+
+## [0.1.0] - 2026-07-20
+
 ### Added
 
 - Initial fixture metadata schema (`schema/fixture.schema.json`,

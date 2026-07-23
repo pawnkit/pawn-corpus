@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1",
+  "id": "projects.minimal-samp-gamemode",
+  "category": "project",
+  "description": "Small SA-MP project with one local standard-library stub.",
+  "profiles": ["samp-037", "recommended"],
+  "tags": ["project", "gamemode", "discovery", "include-resolution"],
+  "kind": "synthetic",
+  "origin": {
+    "kind": "synthetic",
+    "notes": "Covers SA-MP project discovery without downloading dependencies."
+  },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "notes": "The entry and a_samp include resolve from the declared include path."
+  }
+}
