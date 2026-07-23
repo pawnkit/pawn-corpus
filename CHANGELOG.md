@@ -8,6 +8,12 @@ metadata schema (`schemaVersion`) as described in
 
 ## [Unreleased]
 
+## [0.1.6] - 2026-07-23
+
+### Added
+
+- Compiler probes for include order and included-file source locations.
+
 ## [0.1.5] - 2026-07-23
 
 ### Added

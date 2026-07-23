@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1",
+  "id": "preprocessor.compiler_source_location",
+  "category": "preprocessor",
+  "description": "An included file emits an error on its second line.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["compiler-probe", "include", "source-location"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "preprocess/error-directive",
+    "diagnostics": [
+      {
+        "severity": "error",
+        "message": "expected probe failure",
+        "line": 2,
+        "column": 1
+      }
+    ]
+  }
+}

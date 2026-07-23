@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "preprocessor.compiler_include_order",
+  "category": "preprocessor",
+  "description": "Later includes see and replace macros from earlier includes.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["compiler-probe", "include", "order"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}
