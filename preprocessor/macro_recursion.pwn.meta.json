@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1",
+  "id": "preprocessor.macro_recursion",
+  "category": "preprocessor",
+  "description": "Two object-like macros expand into each other.",
+  "profiles": ["samp-037", "openmp", "recommended"],
+  "tags": ["preprocessor", "macro", "recursion", "limit"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "preprocessor/expansion-depth-limit",
+    "diagnostics": [
+      {
+        "severity": "error",
+        "message": "macro expansion depth limit exceeded",
+        "line": 4
+      }
+    ]
+  }
+}

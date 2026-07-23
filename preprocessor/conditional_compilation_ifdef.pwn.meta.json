@@ -2,7 +2,7 @@
   "schemaVersion": "1",
   "id": "preprocessor.conditional_compilation_ifdef",
   "category": "preprocessor",
-  "description": "#if/#elseif/#else/#endif chain driven by defined()-checks and by a macro's numeric value, plus a #if !defined single-branch block.",
+  "description": "Conditional branches driven by defined checks and macro values.",
   "profiles": ["samp-037", "openmp", "recommended"],
   "tags": ["preprocessor", "conditional"],
   "kind": "synthetic",

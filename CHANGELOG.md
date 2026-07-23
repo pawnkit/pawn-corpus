@@ -8,6 +8,12 @@ metadata schema (`schemaVersion`) as described in
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-07-23
+
+### Added
+
+- Preprocessor fixtures for nested branches, recursive macros, and open.mp profile defines.
+
 ## [0.1.2] - 2026-07-23
 
 ### Added

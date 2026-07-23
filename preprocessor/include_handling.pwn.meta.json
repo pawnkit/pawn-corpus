@@ -2,7 +2,7 @@
   "schemaVersion": "1",
   "id": "preprocessor.include_handling",
   "category": "preprocessor",
-  "description": "System include (angle brackets), local include (quotes), and both angle-bracket and quoted #tryinclude forms, followed by a conditional guarded by the included file's include-guard macro.",
+  "description": "Required and optional includes using quoted and angle-bracket paths.",
   "profiles": ["samp-037", "openmp", "recommended"],
   "tags": ["preprocessor", "include"],
   "kind": "synthetic",
@@ -10,6 +10,6 @@
   "license": { "spdx": "MIT", "redistribution": "allowed" },
   "expected": {
     "result": "pending",
-    "notes": "Parses standalone (no include resolver is invoked), but full semantic validation of the guarded branch requires pawn-project include resolution and pawn-analysis macro-state tracking, neither of which exists yet."
+    "notes": "Pending until the corpus adapter provides the fixture's include files."
   }
 }

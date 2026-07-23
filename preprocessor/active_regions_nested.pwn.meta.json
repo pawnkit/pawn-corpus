@@ -1,15 +1,15 @@
 {
   "schemaVersion": "1",
-  "id": "preprocessor.macro_expansion_basic",
+  "id": "preprocessor.active_regions_nested",
   "category": "preprocessor",
-  "description": "Object-like and function-like macros used in expressions and statements.",
+  "description": "Nested conditionals with one active inner branch.",
   "profiles": ["samp-037", "openmp", "recommended"],
-  "tags": ["preprocessor", "macro"],
+  "tags": ["preprocessor", "conditional", "active-region"],
   "kind": "synthetic",
   "origin": { "kind": "synthetic" },
   "license": { "spdx": "MIT", "redistribution": "allowed" },
   "expected": {
     "result": "valid",
-    "notes": "CLAMP and TWICE intentionally evaluate arguments more than once."
+    "notes": "Only ActiveValue reaches the expanded source."
   }
 }

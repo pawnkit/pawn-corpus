@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "id": "preprocessor.profile_openmp_define",
+  "category": "preprocessor",
+  "description": "An open.mp-only branch guarded by the profile define.",
+  "profiles": ["openmp"],
+  "tags": ["preprocessor", "conditional", "profile", "define"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "notes": "The open.mp profile supplies __OPEN_MP__."
+  }
+}
