@@ -9,14 +9,7 @@
   "origin": { "kind": "synthetic" },
   "license": { "spdx": "MIT", "redistribution": "allowed" },
   "expected": {
-    "result": "invalid",
-    "diagnosticClass": "preprocessor/expansion-depth-limit",
-    "diagnostics": [
-      {
-        "severity": "error",
-        "message": "macro expansion depth limit exceeded",
-        "line": 4
-      }
-    ]
+    "result": "pending",
+    "notes": "PawnKit stops the recursive expansion. Compiler comparisons need a timeout because pawncc 3.10.10 does not terminate promptly."
   }
 }

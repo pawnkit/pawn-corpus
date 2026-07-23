@@ -8,6 +8,12 @@ metadata schema (`schemaVersion`) as described in
 
 ## [Unreleased]
 
+## [0.1.4] - 2026-07-23
+
+### Fixed
+
+- Marked recursive macro compiler behaviour as pending and timeout-bound.
+
 ## [0.1.3] - 2026-07-23
 
 ### Added
