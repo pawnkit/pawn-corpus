@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.compiler_tag_mismatch",
+  "category": "semantics",
+  "description": "An integer initializes a Float-tagged local variable.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["compiler-probe", "tag", "warning-213"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "diagnostics": [
+      {
+        "code": "213",
+        "severity": "warning",
+        "message": "tag mismatch"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "id": "lexer.compiler_hex_dollar_suffix",
+  "category": "lexer",
+  "description": "A hexadecimal literal mixing the $ prefix and h suffix.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["compiler-probe", "numeric"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "lexer/invalid-number"
+  }
+}

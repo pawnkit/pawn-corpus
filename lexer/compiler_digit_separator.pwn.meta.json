@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "lexer.compiler_digit_separator",
+  "category": "lexer",
+  "description": "An integer literal with a digit separator.",
+  "profiles": ["openmp"],
+  "tags": ["compiler-probe", "numeric"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "id": "preprocessor.compiler_include_twice",
+  "category": "preprocessor",
+  "description": "The same unguarded include is loaded twice.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["compiler-probe", "include", "compatibility-mode"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "notes": "Pawncc rejects the duplicate by default and accepts it with -Z+."
+  }
+}

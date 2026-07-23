@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1",
+  "id": "preprocessor.compiler_macro_redefinition",
+  "category": "preprocessor",
+  "description": "An object-like macro is defined twice with different values.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["compiler-probe", "macro", "warning-201"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "diagnostics": [
+      {
+        "code": "201",
+        "severity": "warning",
+        "message": "redefinition of constant/macro"
+      }
+    ]
+  }
+}

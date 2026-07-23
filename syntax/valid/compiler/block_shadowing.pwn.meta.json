@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1",
+  "id": "syntax.valid.compiler.block_shadowing",
+  "category": "syntax-valid",
+  "description": "A nested block shadows a local variable.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["compiler-probe", "scope", "warning-219"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "diagnostics": [
+      {
+        "code": "219",
+        "severity": "warning",
+        "message": "local variable shadows a variable at a preceding level"
+      }
+    ]
+  }
+}

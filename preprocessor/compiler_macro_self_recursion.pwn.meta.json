@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "id": "preprocessor.compiler_macro_self_recursion",
+  "category": "preprocessor",
+  "description": "An object-like macro expands to itself.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["compiler-probe", "macro", "recursion", "limit"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "pending",
+    "notes": "Pawncc 3.10.10 does not terminate promptly. Compiler adapters must use a timeout."
+  }
+}

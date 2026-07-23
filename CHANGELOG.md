@@ -8,6 +8,12 @@ metadata schema (`schemaVersion`) as described in
 
 ## [Unreleased]
 
+## [0.1.5] - 2026-07-23
+
+### Added
+
+- Reduced compiler probes for literals, directives, includes, tags, and scope.
+
 ## [0.1.4] - 2026-07-23
 
 ### Fixed

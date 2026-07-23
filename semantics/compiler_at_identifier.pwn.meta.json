@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.compiler_at_identifier",
+  "category": "semantics",
+  "description": "A local variable whose name starts with @.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["compiler-probe", "identifier", "scope"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "invalid",
+    "diagnosticClass": "semantic/invalid-local-name"
+  }
+}

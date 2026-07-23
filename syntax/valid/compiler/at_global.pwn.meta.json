@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "syntax.valid.compiler.at_global",
+  "category": "syntax-valid",
+  "description": "A global variable whose name starts with @.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["compiler-probe", "identifier"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "preprocessor.compiler_elseif",
+  "category": "preprocessor",
+  "description": "A conditional uses Pawn's #elseif directive.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["compiler-probe", "conditional", "directive"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "lexer.compiler_string_prefix",
+  "category": "lexer",
+  "description": "Plain and exclamation-prefixed string literals.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["compiler-probe", "string"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.compiler_tag_union",
+  "category": "semantics",
+  "description": "A parameter accepts values with either of two tags.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["compiler-probe", "tag", "union"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": { "result": "valid" }
+}
