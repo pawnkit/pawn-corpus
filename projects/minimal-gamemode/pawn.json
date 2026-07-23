@@ -1,7 +1,8 @@
 {
-  "name": "minimal-gamemode",
-  "type": "gamemode",
-  "profile": "openmp",
   "entry": "gamemodes/main.pwn",
-  "includePaths": ["includes"]
+  "pawnkit": {
+    "schemaVersion": 1,
+    "profile": "openmp",
+    "includePaths": ["includes"]
+  }
 }

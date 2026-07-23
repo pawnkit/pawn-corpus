@@ -8,6 +8,12 @@ metadata schema (`schemaVersion`) as described in
 
 ## [Unreleased]
 
+## [0.1.7] - 2026-07-23
+
+### Fixed
+
+- Updated the minimal open.mp project to use the RFC 0002 extension fields.
+
 ## [0.1.6] - 2026-07-23
 
 ### Added

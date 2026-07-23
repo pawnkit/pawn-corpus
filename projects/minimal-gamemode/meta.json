@@ -2,7 +2,7 @@
   "schemaVersion": "1",
   "id": "projects.minimal-gamemode",
   "category": "project",
-  "description": "Smallest complete project shape: a manifest plus a single gamemode entry file with no external includes, for exercising basic project discovery.",
+  "description": "Small open.mp project with one gamemode entry.",
   "profiles": ["openmp", "recommended"],
   "tags": ["project", "gamemode", "discovery"],
   "kind": "synthetic",
@@ -12,7 +12,7 @@
   },
   "license": { "spdx": "MIT", "redistribution": "allowed" },
   "expected": {
-    "result": "pending",
-    "notes": "The project adapter does not verify this fixture yet. Expected result: one project rooted here, one gamemode entry, and an include path resolved to the empty includes directory."
+    "result": "valid",
+    "notes": "The project root, open.mp profile, entry, and include path resolve."
   }
 }
