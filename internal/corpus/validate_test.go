@@ -185,6 +185,44 @@ func TestValidateDetectsDuplicateID(t *testing.T) {
 	}
 }
 
+func TestValidateProjectPins(t *testing.T) {
+	dir := t.TempDir()
+	path := filepath.Join(dir, "real-world")
+	if err := os.MkdirAll(path, 0o755); err != nil {
+		t.Fatal(err)
+	}
+	content := "project\trepository\trevision\tlicense\trole\n" +
+		"example\thttps://github.com/pawnkit/example\t0123456789abcdef0123456789abcdef01234567\tMIT\tsmall\n"
+	if err := os.WriteFile(filepath.Join(path, "PROJECTS.tsv"), []byte(content), 0o644); err != nil {
+		t.Fatal(err)
+	}
+
+	result := &Result{}
+	validateProjectPins(dir, result)
+	if !result.OK() {
+		t.Fatalf("valid pins failed: %v", result.Errors)
+	}
+}
+
+func TestValidateProjectPinsRejectsMutableRevision(t *testing.T) {
+	dir := t.TempDir()
+	path := filepath.Join(dir, "real-world")
+	if err := os.MkdirAll(path, 0o755); err != nil {
+		t.Fatal(err)
+	}
+	content := "project\trepository\trevision\tlicense\trole\n" +
+		"example\thttps://github.com/pawnkit/example\tmain\tMIT\tsmall\n"
+	if err := os.WriteFile(filepath.Join(path, "PROJECTS.tsv"), []byte(content), 0o644); err != nil {
+		t.Fatal(err)
+	}
+
+	result := &Result{}
+	validateProjectPins(dir, result)
+	if result.OK() || !containsSubstring(joinErrors(result.Errors), "full lowercase commit hash") {
+		t.Fatalf("errors = %v", result.Errors)
+	}
+}
+
 func writeSchemaCopy(t *testing.T, dir string) {
 	t.Helper()
 	root := repoRoot(t)
@@ -212,12 +250,12 @@ func writeJSON(t *testing.T, path string, data any) {
 }
 
 func containsSubstring(s, substr string) bool {
-	return len(s) >= len(substr) && (func() bool {
+	return len(s) >= len(substr) && func() bool {
 		for i := 0; i+len(substr) <= len(s); i++ {
 			if s[i:i+len(substr)] == substr {
 				return true
 			}
 		}
 		return false
-	})()
+	}()
 }

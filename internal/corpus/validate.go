@@ -2,12 +2,19 @@ package corpus
 
 import (
 	"crypto/sha256"
+	"encoding/csv"
 	"encoding/hex"
 	"fmt"
+	"io"
+	"net/url"
 	"os"
 	"path/filepath"
+	"regexp"
 	"sort"
+	"strings"
 )
+
+var commitPattern = regexp.MustCompile(`^[0-9a-f]{40}$`)
 
 type Result struct {
 	FixtureCount int
@@ -47,8 +54,85 @@ func Validate(root string, schema *Schema) (*Result, error) {
 
 	reportDuplicateIDs(idOwners, result)
 	reportDuplicateContent(contentHashes, result)
+	validateProjectPins(root, result)
 
 	return result, nil
+}
+
+func validateProjectPins(root string, result *Result) {
+	path := filepath.Join(root, "real-world", "PROJECTS.tsv")
+	file, err := os.Open(path)
+	if os.IsNotExist(err) {
+		return
+	}
+	if err != nil {
+		result.fail("real-world/PROJECTS.tsv: %v", err)
+		return
+	}
+	defer func() {
+		_ = file.Close()
+	}()
+
+	reader := csv.NewReader(file)
+	reader.Comma = '\t'
+	reader.FieldsPerRecord = 5
+
+	header, err := reader.Read()
+	if err != nil {
+		result.fail("real-world/PROJECTS.tsv: reading header: %v", err)
+		return
+	}
+	wantHeader := []string{"project", "repository", "revision", "license", "role"}
+	if strings.Join(header, "\t") != strings.Join(wantHeader, "\t") {
+		result.fail("real-world/PROJECTS.tsv: header must be %q", strings.Join(wantHeader, "\t"))
+		return
+	}
+
+	projects := map[string]bool{}
+	roles := map[string]bool{}
+	for line := 2; ; line++ {
+		record, readErr := reader.Read()
+		if readErr == io.EOF {
+			break
+		}
+		if readErr != nil {
+			result.fail("real-world/PROJECTS.tsv:%d: %v", line, readErr)
+			continue
+		}
+
+		project, repository, revision, license, role := record[0], record[1], record[2], record[3], record[4]
+		switch {
+		case project == "":
+			result.fail("real-world/PROJECTS.tsv:%d: project is required", line)
+		case projects[project]:
+			result.fail("real-world/PROJECTS.tsv:%d: duplicate project %q", line, project)
+		default:
+			projects[project] = true
+		}
+
+		parsed, parseErr := url.Parse(repository)
+		if parseErr != nil || parsed.Scheme != "https" || parsed.Host != "github.com" || strings.Trim(parsed.Path, "/") == "" {
+			result.fail("real-world/PROJECTS.tsv:%d: repository must be an HTTPS GitHub URL", line)
+		}
+		if !commitPattern.MatchString(revision) {
+			result.fail("real-world/PROJECTS.tsv:%d: revision must be a full lowercase commit hash", line)
+		}
+		if license == "" || license == "NOASSERTION" {
+			result.fail("real-world/PROJECTS.tsv:%d: license must be a known SPDX identifier", line)
+		}
+		switch {
+		case role == "":
+			result.fail("real-world/PROJECTS.tsv:%d: role is required", line)
+		case roles[role]:
+			result.fail("real-world/PROJECTS.tsv:%d: duplicate role %q", line, role)
+		default:
+			roles[role] = true
+		}
+	}
+
+	if len(projects) == 0 {
+		result.fail("real-world/PROJECTS.tsv: at least one project is required")
+	}
 }
 
 func validateOne(root string, fx Fixture, schema *Schema, result *Result) {

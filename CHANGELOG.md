@@ -8,6 +8,12 @@ metadata schema (`schemaVersion`) as described in
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-07-23
+
+### Added
+
+- Offline validation for pinned integration projects.
+
 ## [0.1.1] - 2026-07-23
 
 ### Added
