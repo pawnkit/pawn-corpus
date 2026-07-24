@@ -6,6 +6,13 @@ and this project uses independent semantic versioning for the fixture
 metadata schema (`schemaVersion`) as described in
 `docs/compatibility.md`.
 
+## [0.1.9] - 2026-07-24
+
+### Fixed
+
+- `tools/genperf` now checks its write and file-close errors instead of
+  discarding them. Output is unchanged.
+
 ## [0.1.8] - 2026-07-24
 
 ### Added
