@@ -58,8 +58,6 @@ func main() {
 	}
 }
 
-// errWriter tracks the first write error across many sequential writes, so
-// call sites don't need to check every fmt.Fprintf/Fprintln individually.
 type errWriter struct {
 	w   *bufio.Writer
 	err error
