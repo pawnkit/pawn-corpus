@@ -57,7 +57,7 @@ The schema is authoritative. This table is a quick reference:
 |---|---|
 | `schemaVersion` | Metadata schema version (currently `"1"`). |
 | `id` | Stable, path-derived fixture ID. |
-| `category` | One of the corpus categories (`syntax-valid`, `syntax-invalid`, `lexer`, `preprocessor`, `semantics`, `format`, `lint`, `lsp-edit-trace`, `amx`, `migrate`, `project`, `real-world`). |
+| `category` | One of the corpus categories (`syntax-valid`, `syntax-invalid`, `lexer`, `preprocessor`, `semantics`, `format`, `lint`, `lsp-edit-trace`, `amx`, `migrate`, `project`, `real-world`, `performance`). |
 | `description` | One-line human description. |
 | `profiles` | Compatibility profile(s) this fixture applies to (`samp-037`, `openmp`, `legacy`, `recommended`, `strict`, `library`). |
 | `tags` | Optional free-form tags for adapter filtering. |

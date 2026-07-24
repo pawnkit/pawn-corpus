@@ -22,7 +22,7 @@ func isMetadataFile(name string) bool {
 
 var trackedCategoryRoots = []string{
 	"syntax", "lexer", "preprocessor", "semantics", "format", "lint",
-	"lsp", "amx", "migrate", "projects", "real-world",
+	"lsp", "amx", "migrate", "projects", "real-world", "performance",
 }
 
 func DiscoverFixtures(root string) ([]Fixture, error) {
@@ -134,6 +134,8 @@ func expectedCategory(dir string) (string, bool) {
 		return "project", true
 	case "real-world":
 		return "real-world", true
+	case "performance":
+		return "performance", true
 	default:
 		return "", false
 	}

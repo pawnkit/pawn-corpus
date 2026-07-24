@@ -18,6 +18,7 @@ Fixtures have stable IDs and licence metadata. Synthetic examples are labelled; 
 | `amx` | Runtime fixtures and metadata |
 | `projects` | Small, complete Pawn projects |
 | `real-world` | Import rules and licensed upstream samples |
+| `performance` | Large-file benchmark fixtures and their generator |
 
 ## Fixture metadata
 

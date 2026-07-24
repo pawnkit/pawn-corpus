@@ -42,7 +42,8 @@
         "amx",
         "migrate",
         "project",
-        "real-world"
+        "real-world",
+        "performance"
       ]
     },
     "description": {

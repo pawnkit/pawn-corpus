@@ -6,7 +6,13 @@ and this project uses independent semantic versioning for the fixture
 metadata schema (`schemaVersion`) as described in
 `docs/compatibility.md`.
 
-## [Unreleased]
+## [0.1.8] - 2026-07-24
+
+### Added
+
+- Added a `performance` fixture category and `tools/genperf`, a deterministic
+  generator for large single-file, macro-heavy, pathological, and
+  include-heavy Pawn sources used in interactive-lint latency benchmarks.
 
 ## [0.1.7] - 2026-07-23
 

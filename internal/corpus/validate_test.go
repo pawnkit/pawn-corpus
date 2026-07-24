@@ -40,6 +40,7 @@ func TestExpectedCategory(t *testing.T) {
 		{"migrate/pairs/callback-rename", "migrate", true},
 		{"projects/minimal-gamemode", "project", true},
 		{"real-world", "real-world", true},
+		{"performance/large-single-file", "performance", true},
 		{"docs", "", false},
 	}
 	for _, c := range cases {
