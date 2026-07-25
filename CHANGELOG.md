@@ -6,6 +6,12 @@ and this project uses independent semantic versioning for the fixture
 metadata schema (`schemaVersion`) as described in
 `docs/compatibility.md`.
 
+## [0.1.11] - 2026-07-25
+
+### Added
+
+- Indexed preprocessor compatibility fixtures and their compiler behavior.
+
 ## [0.1.10] - 2026-07-24
 
 ### Changed
