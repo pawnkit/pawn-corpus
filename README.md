@@ -1,5 +1,7 @@
 # pawn-corpus
 
+[![Maturity: infrastructure](https://img.shields.io/badge/maturity-infrastructure-lightgrey)](.pawnkit/support.json)
+
 `pawn-corpus` is the shared test data used by PawnKit parsers, formatters, linters, migration tools, editor features, and AMX runtimes.
 
 ## Status

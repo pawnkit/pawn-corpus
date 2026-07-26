@@ -6,6 +6,12 @@ and this project uses independent semantic versioning for the fixture
 metadata schema (`schemaVersion`) as described in
 `docs/compatibility.md`.
 
+## [0.1.12] - 2026-07-25
+
+### Changed
+
+- Added the repository support record with CI validation.
+
 ## [0.1.11] - 2026-07-25
 
 ### Added
