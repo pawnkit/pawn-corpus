@@ -6,6 +6,12 @@ and this project uses independent semantic versioning for the fixture
 metadata schema (`schemaVersion`) as described in
 `docs/compatibility.md`.
 
+## [0.1.15] - 2026-07-29
+
+### Added
+
+- Added AKRP-V5 to the pinned real-project set.
+
 ## [0.1.14] - 2026-07-29
 
 ### Added

@@ -6,11 +6,11 @@ No upstream source is checked in here yet. Real-world fixtures need per-file lic
 The list is not permission to redistribute their source. CI fetches an exact
 revision and follows each project's licence.
 
-The first five-project integration set is:
+The integration set is:
 
 - `projects/minimal-samp-gamemode`
 - `projects/filterscript-with-includes`
-- the three repositories in `PROJECTS.tsv`
+- the repositories pinned in `PROJECTS.tsv`
 
 ## Acceptance rules
 

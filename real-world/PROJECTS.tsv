@@ -2,3 +2,4 @@ project	repository	revision	license	role
 scavenge-survive	https://github.com/Southclaws/ScavengeSurvive	399ba8e8fd164243b32fb694f4bb6ce37fe40c35	MPL-2.0	ysi-heavy-sampctl
 gta-open	https://github.com/PatrickGTR/gta-open	c7630a5751827c23cf06308fd7b2d0095801e76e	Apache-2.0	large-modular
 sp-rp	https://github.com/DignitySAMP/SP-RP	3abda1657c0088f837c3e55ee818ebacfe51eb79	BSD-3-Clause	large-legacy-windows-paths
+akrp-v5	https://github.com/najuaircrack/AKRP-V5	72aabd8d2199a9782eba62ea7f8ff99fefb03d90	MIT	large-openmp-roleplay
