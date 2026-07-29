@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1",
+  "id": "format.pairs.compiler_equivalence",
+  "category": "format",
+  "description": "A compile-ready script keeps the same compiler result after spacing and brace formatting.",
+  "profiles": ["samp-037", "openmp", "recommended"],
+  "tags": ["format", "compiler-probe", "equivalence"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "goldenRef": "expected.pwn",
+    "notes": "Compile input.pwn and expected.pwn with the same compiler and compare exit status and diagnostic codes."
+  }
+}

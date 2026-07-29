@@ -6,6 +6,12 @@ and this project uses independent semantic versioning for the fixture
 metadata schema (`schemaVersion`) as described in
 `docs/compatibility.md`.
 
+## [0.1.13] - 2026-07-29
+
+### Added
+
+- Added a compile-ready formatter equivalence fixture.
+
 ## [0.1.12] - 2026-07-25
 
 ### Changed
