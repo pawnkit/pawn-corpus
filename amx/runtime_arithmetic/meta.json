@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1",
+  "id": "amx.runtime_arithmetic",
+  "category": "amx",
+  "description": "A compiled program covering arrays, loops, calls, branches, switches, shifts, division, and bitwise operations.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["amx", "compiler-probe", "runtime", "differential"],
+  "kind": "synthetic",
+  "origin": {
+    "kind": "synthetic",
+    "notes": "Compiled with pawn-lang/compiler 3.10.10 at commit 134ad7a836c581546665340aedb59efd4636e269."
+  },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "goldenRef": "runtime_arithmetic.amx",
+    "notes": "pawnrun and goamx must both return 45. The artifact is built from source.pwn with pawncc 3.10.10."
+  }
+}

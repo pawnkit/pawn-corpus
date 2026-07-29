@@ -1,6 +1,8 @@
 # AMX fixtures
 
-No compiled AMX fixture is checked in yet. A useful binary must come from readable Pawn source and a pinned compiler; a hand-built approximation would not test real compiler output.
+`runtime_arithmetic` is compiled from checked-in Pawn source with pawncc 3.10.10.
+Its reproduction script prints the artifact hash. Runtime adapters compare its
+return value with the canonical C runner.
 
 ## Expected layout
 
@@ -16,4 +18,5 @@ Metadata should record the compiler version or commit, flags, artifact checksum,
 
 AMX files remain untrusted input even when generated for this corpus. Runtime tests need the same memory, instruction, and timeout limits used for arbitrary bytecode.
 
-The next step is to wire a pinned compiler into fixture generation and commit the source, output, metadata, and reproduction command together.
+Set `PAWNCC` to the pinned compiler and run the fixture's `reproduce.sh` script
+after changing its source.

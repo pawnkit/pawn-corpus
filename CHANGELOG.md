@@ -6,6 +6,12 @@ and this project uses independent semantic versioning for the fixture
 metadata schema (`schemaVersion`) as described in
 `docs/compatibility.md`.
 
+## [0.1.14] - 2026-07-29
+
+### Added
+
+- Added a source-backed AMX runtime differential fixture.
+
 ## [0.1.13] - 2026-07-29
 
 ### Added
