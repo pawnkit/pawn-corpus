@@ -1,5 +1,5 @@
 #if defined _INC_A_SAMP
-	#endinput
+    #endinput
 #endif
 #define _INC_A_SAMP
 

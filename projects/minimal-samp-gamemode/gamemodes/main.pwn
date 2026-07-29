@@ -2,5 +2,5 @@
 
 main()
 {
-	print("PawnKit corpus");
+    print("PawnKit corpus");
 }
