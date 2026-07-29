@@ -3,6 +3,11 @@
   "pawnkit": {
     "schemaVersion": 1,
     "profile": "samp-037",
-    "includePaths": ["includes"]
+    "includePaths": ["includes"],
+    "tool": {
+      "pawntest": {
+        "tests": ["tests/..."]
+      }
+    }
   }
 }

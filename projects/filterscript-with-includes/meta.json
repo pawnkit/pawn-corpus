@@ -4,7 +4,7 @@
   "category": "project",
   "description": "Filterscript project with a local include resolved via includePaths, exercising include resolution during project discovery.",
   "profiles": ["openmp", "recommended"],
-  "tags": ["project", "filterscript", "discovery", "include-resolution"],
+  "tags": ["project", "filterscript", "discovery", "include-resolution", "test"],
   "kind": "synthetic",
   "origin": {
     "kind": "synthetic",
@@ -13,6 +13,6 @@
   "license": { "spdx": "MIT", "redistribution": "allowed" },
   "expected": {
     "result": "valid",
-    "notes": "The entry and both includes resolve from the declared include path."
+    "notes": "The entry and both includes resolve, and the project tests pass."
   }
 }

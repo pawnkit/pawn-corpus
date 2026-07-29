@@ -4,7 +4,7 @@
   "category": "project",
   "description": "Small SA-MP project with one local standard-library stub.",
   "profiles": ["samp-037", "recommended"],
-  "tags": ["project", "gamemode", "discovery", "include-resolution"],
+  "tags": ["project", "gamemode", "discovery", "include-resolution", "test"],
   "kind": "synthetic",
   "origin": {
     "kind": "synthetic",
@@ -13,6 +13,6 @@
   "license": { "spdx": "MIT", "redistribution": "allowed" },
   "expected": {
     "result": "valid",
-    "notes": "The entry and a_samp include resolve from the declared include path."
+    "notes": "The entry and a_samp include resolve, and the project test passes."
   }
 }

@@ -6,6 +6,12 @@ and this project uses independent semantic versioning for the fixture
 metadata schema (`schemaVersion`) as described in
 `docs/compatibility.md`.
 
+## [0.1.16] - 2026-07-29
+
+### Added
+
+- Added runnable tests to both golden projects.
+
 ## [0.1.15] - 2026-07-29
 
 ### Added
