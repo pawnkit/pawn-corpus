@@ -6,6 +6,12 @@ and this project uses independent semantic versioning for the fixture
 metadata schema (`schemaVersion`) as described in
 `docs/compatibility.md`.
 
+## [0.1.18] - 2026-07-30
+
+### Fixed
+
+- Keep source fixtures on LF line endings across supported platforms.
+
 ## [0.1.17] - 2026-07-29
 
 ### Fixed
