@@ -6,6 +6,12 @@ and this project uses independent semantic versioning for the fixture
 metadata schema (`schemaVersion`) as described in
 `docs/compatibility.md`.
 
+## [0.1.19] - 2026-07-31
+
+### Changed
+
+- Made the minimal open.mp project usable by the build and run workflow.
+
 ## [0.1.18] - 2026-07-30
 
 ### Fixed

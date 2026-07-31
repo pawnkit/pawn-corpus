@@ -13,6 +13,6 @@
   "license": { "spdx": "MIT", "redistribution": "allowed" },
   "expected": {
     "result": "valid",
-    "notes": "The project root, open.mp profile, entry, and include path resolve."
+    "notes": "The project resolves and has enough runtime metadata for pawn build and pawn run."
   }
 }

@@ -1,5 +1,10 @@
 {
   "entry": "gamemodes/main.pwn",
+  "output": "build/minimal-gamemode.amx",
+  "preset": "openmp",
+  "runtime": {
+    "announce": false
+  },
   "pawnkit": {
     "schemaVersion": 1,
     "profile": "openmp",
