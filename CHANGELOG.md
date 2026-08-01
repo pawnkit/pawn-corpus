@@ -6,6 +6,13 @@ and this project uses independent semantic versioning for the fixture
 metadata schema (`schemaVersion`) as described in
 `docs/compatibility.md`.
 
+## [0.1.20] - 2026-08-01
+
+### Added
+
+- Added a regression fixture for YSI test entry points that share a production
+  function name.
+
 ## [0.1.19] - 2026-07-31
 
 ### Changed

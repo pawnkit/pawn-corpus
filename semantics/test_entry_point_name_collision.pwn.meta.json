@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1",
+  "id": "semantics.test_entry_point_name_collision",
+  "category": "semantics",
+  "description": "A YSI test entry point shares a name with a production function.",
+  "profiles": ["samp-037", "openmp"],
+  "tags": ["semantic", "symbol", "test-entry-point"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "valid",
+    "notes": "The call inside the test resolves to the four-argument production function."
+  }
+}
