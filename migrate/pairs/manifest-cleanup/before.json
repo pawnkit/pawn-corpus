@@ -1,0 +1,6 @@
+{
+  "entry": "gamemodes/main.pwn",
+  "pawnkit": {
+    "includePaths": ["include", "vendor/include", "include"]
+  }
+}

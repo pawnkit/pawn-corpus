@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1",
+  "id": "migrate.pairs.manifest-cleanup",
+  "category": "migrate",
+  "description": "Duplicate PawnKit include roots are reduced to one entry in first-use order.",
+  "profiles": ["recommended"],
+  "tags": ["manifest", "include-paths", "cleanup"],
+  "kind": "synthetic",
+  "origin": { "kind": "synthetic" },
+  "license": { "spdx": "MIT", "redistribution": "allowed" },
+  "expected": {
+    "result": "pending",
+    "goldenRef": "after.json",
+    "notes": "The owning pawnmigrate rule still needs a corpus adapter to verify this pair automatically."
+  }
+}
