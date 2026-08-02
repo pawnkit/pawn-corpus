@@ -6,6 +6,12 @@ and this project uses independent semantic versioning for the fixture
 metadata schema (`schemaVersion`) as described in
 `docs/compatibility.md`.
 
+## Unreleased
+
+### Added
+
+- Added a manifest-cleanup migration pair for duplicate include roots.
+
 ## [0.1.20] - 2026-08-01
 
 ### Added
